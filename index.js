@@ -4,20 +4,20 @@ const port = 3000;
 
 app.use(express.static(__dirname));
 
-app.get('/', (req, res) => {
-  res.sendFile(__dirname + '/index.html');
+app.get('/CODE-Camp-Test/', (req, res) => {
+  res.sendFile(__dirname + '/CODE-Camp-Test/index.html');
 });
 
-app.get('/index', (req, res) => {
-  res.sendFile(__dirname + '/index.html');
+app.get('/CODE-Camp-Test/index', (req, res) => {
+  res.sendFile(__dirname + '/CODE-Camp-Test/index.html');
 });
 
-app.get('/about', (req, res) => {
-  res.sendFile(__dirname + '/about.html');
+app.get('/CODE-Camp-Test/about', (req, res) => {
+  res.sendFile(__dirname + '/CODE-Camp-Test/about.html');
 });
 
-app.get('/contact', (req, res) => {
-  res.sendFile(__dirname + '/contact.html');
+app.get('/CODE-Camp-Test/contact', (req, res) => {
+  res.sendFile(__dirname + '/CODE-Camp-Test/contact.html');
 });
 
 app.listen(port, () => {
